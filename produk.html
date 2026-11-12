@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk | ZAFRA PHONE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">ZAFRA<span>PHONE.</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a class="active" href="produk.html">Produk</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+
+<section class="page-banner">
+  <p class="eyebrow">OUR COLLECTION</p>
+  <h1>Semua Produk</h1>
+  <p>Temukan smartphone favoritmu dari berbagai merek.</p>
+</section>
+
+<section class="section">
+  <div class="filter-area">
+    <input type="search" id="searchProduct" placeholder="Cari nama handphone...">
+
+    <select id="categoryFilter">
+      <option value="Semua">Semua Merek</option>
+      <option value="Apple">Apple</option>
+      <option value="Samsung">Samsung</option>
+      <option value="Xiaomi">Xiaomi</option>
+      <option value="Redmi">Redmi</option>
+      <option value="POCO">POCO</option>
+      <option value="OPPO">OPPO</option>
+      <option value="Vivo">Vivo</option>
+      <option value="Realme">Realme</option>
+      <option value="Google Pixel">Google Pixel</option>
+    </select>
+
+    <select id="sortPrice">
+      <option value="default">Urutkan Harga</option>
+      <option value="low">Harga Terendah</option>
+      <option value="high">Harga Tertinggi</option>
+    </select>
+  </div>
+
+  <p class="product-total" id="productCount"></p>
+  <div class="product-grid" id="productList"></div>
+  <p class="empty-message" id="noProducts" hidden>Produk tidak ditemukan.</p>
+</section>
+
+<footer>
+  <p>© 2026 ZAFRA PHONE. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
